@@ -15,6 +15,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composeapp.ui.theme.ComposeAppTheme
+import com.example.composeapp.ui.theme.GamGuelOrange
 import com.example.composeapp.ui.theme.Purple200
 import com.example.composeapp.ui.theme.Teal200
 
@@ -34,7 +35,7 @@ fun MyComposeApp(content : @Composable () -> Unit) {
     ComposeAppTheme {
         // A surface container using the 'background' color from the theme
         //MaterialTheme.colors.background
-        Surface(color = Purple200) {
+        Surface(color = GamGuelOrange) {
             content()
         }
     }
@@ -79,6 +80,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     MyComposeApp {
-        Greeting("Android")
+        TestContent()
     }
 }
